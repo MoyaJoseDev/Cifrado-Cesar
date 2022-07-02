@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace Cifrado_Cesar
 {
-    public partial class Form1 : Form
+    public partial class CifradoCesar : Form
     {
         string texto = "";
         string resultado = "";
@@ -103,6 +103,9 @@ namespace Cifrado_Cesar
                         break;
                     case " ":
                         resultado += " ";
+                        break;
+                    default:
+                        resultado += texto.Substring(i, 1);
                         break;
 
                 }
@@ -200,12 +203,15 @@ namespace Cifrado_Cesar
                     case " ":
                         resultado += " ";
                         break;
+                    default:
+                        resultado += texto.Substring(i, 1);
+                        break;
 
                 }
             }
             return resultado;
         }
-        public Form1()
+        public CifradoCesar()
         {
             InitializeComponent();
         }
@@ -246,9 +252,30 @@ namespace Cifrado_Cesar
             resultado = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e)
         {
             Process.Start(@"https://github.com/MoyaJoseDev");
+        }
+
+        private void cifrarV2_Click(object sender, EventArgs e)
+        {
+            cuadroResultado.Clear();
+            texto = cuadroTexto.Text;
+            cuadroResultado.Text = cifrarTexto(texto.ToUpper());
+            resultado = "";
+        }
+
+        private void traducirV2_Click(object sender, EventArgs e)
+        {
+            cuadroResultado.Clear();
+            texto = cuadroTexto.Text;
+            cuadroResultado.Text = traducirTexto(texto.ToUpper());
+            resultado = "";
+        }
+
+        private void copyButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(cuadroResultado.Text);
         }
     }
 }
