@@ -45,11 +45,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label1.Location = new System.Drawing.Point(486, 27);
+            this.label1.Location = new System.Drawing.Point(429, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 34);
+            this.label1.Size = new System.Drawing.Size(489, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cifrador en codigo Cesar";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -105,8 +105,9 @@
             this.copyButton.BorderSize = 0;
             this.copyButton.FlatAppearance.BorderSize = 0;
             this.copyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyButton.Font = new System.Drawing.Font("Roboto Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyButton.ForeColor = System.Drawing.Color.White;
-            this.copyButton.Location = new System.Drawing.Point(602, 596);
+            this.copyButton.Location = new System.Drawing.Point(577, 595);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(150, 40);
             this.copyButton.TabIndex = 11;
@@ -124,6 +125,7 @@
             this.traducirV2.BorderSize = 0;
             this.traducirV2.FlatAppearance.BorderSize = 0;
             this.traducirV2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.traducirV2.Font = new System.Drawing.Font("Roboto Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.traducirV2.ForeColor = System.Drawing.Color.White;
             this.traducirV2.Location = new System.Drawing.Point(728, 330);
             this.traducirV2.Name = "traducirV2";
@@ -143,6 +145,7 @@
             this.cifrarV2.BorderSize = 0;
             this.cifrarV2.FlatAppearance.BorderSize = 0;
             this.cifrarV2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cifrarV2.Font = new System.Drawing.Font("Roboto Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cifrarV2.ForeColor = System.Drawing.Color.White;
             this.cifrarV2.Location = new System.Drawing.Point(437, 330);
             this.cifrarV2.Name = "cifrarV2";
